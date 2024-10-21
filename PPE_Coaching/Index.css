@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Inter Regular';
+    src: url('../fonts/Inter-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 1000px;
+}
+
+
+
+
+.Navbar {
+    height: 75px;
+    background-color: #535252;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+.site-recherche {
+    border-radius: 9px;
+    background-color: #504f4f;
+}
+
+
+.NavBarBouton {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.NavBarBouton a {
+    color: white;
+    font-family: 'Inter Regular', sans-serif;
+    font-size: 24px;
+}
+
+
+.NavBarBouton img {
+    padding: 0 50px;
+}
+
+
+.NavBarSeConnecter a {
+    font-family: 'Inter Regular', sans-serif;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+    background-color: red;
+    padding: 10px 20px;
+    text-decoration: none; /* Supprime le soulignement des liens */
+}
+
+
+.NavBarSeConnecter a:hover {
+    background-color: darkred;
+}
+
+
+a {
+    text-decoration: none; /* Supprime le soulignement des liens */
+}

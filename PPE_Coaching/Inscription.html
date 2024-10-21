@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inscription.css">
+    <title>Je suis coach inscription</title>
+ 
+</head>
+
+<body>
+    <form action="/submit_registration" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required  onmouseover="this.style.borderColor='blue'"     />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <input type="submit" value="Register">
+        <p style="color: white;">Avez vous déjà un compte?</p>
+        <a href="Connexion.html" style="color:white">se connecter</a>
+    </form>
+    <script>
+        const form = document.getElementById("myForm");
+        let borderColor = ["#ccc", "#333", "#f00", "#0f0", "#00f"];
+        let index = 0;
+
+        form.addEventListener("mouseover", () => {
+            form.style.borderWidth = "3px";
+            form.style.borderColor = borderColor[index];
+        });
+
+        form.addEventListener("mouseout", () => {
+            form.style.borderWidth = "1px";
+            form.style.borderColor = borderColor[0];
+        });
+
+        setInterval(() => {
+            index = (index + 1) % borderColor.length;
+            form.style.borderColor = borderColor[index];
+        }, 1000);
+    </script>
+</body>
+
+</html>
